@@ -1,18 +1,34 @@
 package Factorial;
 
-public class Factorial{
-    static int factor;
+import java.util.Scanner;
 
-    public static void main(String[] args) {
-        System.out.println(searchFactoria(10));
+public class Factorial {
+    static int factor;
+    int n;
+
+    Factorial(int n) {
+        this.n = n;
+    }
+    Factorial(){
 
     }
 
-    public static int searchFactoria(int n) {
-        if (n < 0) {
+    public static int searchFactorial(int n) {
+        if (n < 2) {
             return 1;
         }
-        factor = searchFactoria(n - 1) * n;
+        factor = searchFactorial(n - 1) * n;
         return factor;
     }
+
+    public static void main(String[] args) {
+        Factorial fac = new Factorial();
+        Scanner scn = new Scanner(System.in);
+        System.out.println("Input number n: ");
+        fac.n = scn.nextInt();
+        System.out.println("Factorial of number " + fac.n + " is " + searchFactorial(fac.n));
+
+    }
+
+
 }
