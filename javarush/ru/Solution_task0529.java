@@ -1,4 +1,4 @@
-package javarush.ru.task0529;
+package javarush.ru;
 
 /*
 Консоль-копилка
@@ -6,7 +6,7 @@ package javarush.ru.task0529;
 
 import java.util.Scanner;
 
-public class Solution {
+public class Solution_task0529 {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
         Scanner in = new Scanner(System.in);
