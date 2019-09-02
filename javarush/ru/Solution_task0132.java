@@ -1,4 +1,5 @@
 package javarush.ru;
+
 /*
 Сумма цифр трехзначного числа
 */
@@ -13,7 +14,7 @@ public class Solution_task0132 {
         int x = number;
         int a = (x / 100);
         int b = (x - (a * 100)) / 10;
-        int c = x - (a * 100) - (b*10);
+        int c = x - (a * 100) - (b * 10);
         int d = a + b + c;
         return d;
     }
